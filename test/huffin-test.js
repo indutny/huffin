@@ -9,19 +9,19 @@ describe('Huffin', () => {
     const buf = Buffer.from('2f8450d5b9f2746150ec435d99ad348a' +
                             'd49b46f82a378cb87b3fc15b00884d21', 'hex');
     assert.equal(huffin.stringify(buf),
-                 '@dsmmuiyhuhnhmrtuegsuairr/aRSpN43wVW4Ycfd+grcAEJtC');
+                 '@wccceyt/lacLg2If6spspVGk3jTCV7lhxN37Cd4CQGwKAQ');
   });
 
   it('should parse string', () => {
     const buf = Buffer.from('2f8450d5b9f2746150ec435d99ad348a' +
                             'd49b46f82a378cb87b3fc15b00884d21', 'hex');
     assert.deepEqual(
-        huffin.parse('@dsmmuiyhuhnhmrtuegsuairr/aRSpN43wVW4Ycfd+grcAEJtC'),
+        huffin.parse('@wccceyt/lacLg2If6spspVGk3jTCV7lhxN37Cd4CQGwKAQ'),
         buf);
   });
 
   it('should test binary data', () => {
-    const prefix = huffin.parsePrefix('dsmmuiyhuhnhmrtuegsuairr');
+    const prefix = huffin.parsePrefix('wccceyt');
 
     const buf = Buffer.from('2f8450d5b9f2746150ec435d99ad348a' +
                             'd49b46f82a378cb87b3fc15b00884d21', 'hex');
@@ -31,12 +31,12 @@ describe('Huffin', () => {
   });
 
   it('should restore binary data on partial match', () => {
-    const buf = Buffer.from('521ff2fda5b3c5fc11e36124f1747610' +
-                            '13a6220a5f3a89b3211171874cfa5194', 'hex');
+    const buf = Buffer.from('2e0092507ba44b52c8f30195af38ce01' +
+                            '6dd8cc53eaad2778a04be205ba617ee3', 'hex');
 
     assert.equal(
         huffin.stringify(buf),
-        '@/Uh/y/aWzxfwR42Ek8XR2EBOmIgpfOomzIRFxh0z6UZQ');
+        '@/LgCSUHukS1LI8wGVrzjOAW3YzFPqrSd4oEviBbphfuM');
 
     assert.deepEqual(huffin.parse(huffin.stringify(buf)),
                      buf);
