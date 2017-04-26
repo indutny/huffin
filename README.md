@@ -9,11 +9,11 @@ Codes.
 const id = require('huffin');
 
 const key = Buffer.from(
-    'd52724b6319a37cc7d2f424a5643638453b64ad9e0ec7bdee2915f9156b80693',
+    '036fe075a1452319e4f4fcd9642eb339d2441df96c7cb1d9bb52c4b95f24698c',
     'hex');
-id.stringify(key);  // 'wut/1ScktjGaN8x9L0JKVkNjhFO2Stng7Hve4pFfkVa4'
+id.stringify(key);  // '@hype/Db+B1oUUjGeT0/NlkLrM50kQd+Wx8sdm7UsS5Xw'
 
-id.parse('wut/1ScktjGaN8x9L0JKVkNjhFO2Stng7Hve4pFfkVa4');  // `key`
+id.parse('@hype/Db+B1oUUjGeT0/NlkLrM50kQd+Wx8sdm7UsS5Xw');  // `key`
 ```
 
 ## LICENSE
