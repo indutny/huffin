@@ -1,6 +1,6 @@
 {
   "name": "huffin",
-  "version": "1.0.1-2",
+  "version": "1.0.1-3",
   "description": "Human-readable representation of [ed22519][0] public keys, through Huffman Codes.",
   "main": "lib/huffin.js",
   "files": [
