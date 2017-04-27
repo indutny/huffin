@@ -11,9 +11,9 @@ const id = require('huffin');
 const key = Buffer.from(
     '9d7ca59459c65b79c39bd2c75e831e09542abebe7a2054efde2d19072bdbe0a4',
     'hex');
-id.stringify(key);  // 'hyper/ATr5SyizjLbzhzeljr0GPBKoVX189ECp37xaMg5X'
+id.stringify(key);  // 'hyper_FJLQ6naoksSNcEou9FAfiV52mfU5NVV6exVANU9c'
 
-id.parse('hyper/ATr5SyizjLbzhzeljr0GPBKoVX189ECp37xaMg5X');  // `key`
+id.parse('hyper_FJLQ6naoksSNcEou9FAfiV52mfU5NVV6exVANU9c');  // `key`
 ```
 
 ## LICENSE
