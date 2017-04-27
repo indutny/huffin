@@ -9,19 +9,19 @@ describe('Huffin', () => {
     const buf = Buffer.from('2f8450d5b9f2746150ec435d99ad348a' +
                             'd49b46f82a378cb87b3fc15b00884d21', 'hex');
     assert.equal(huffin.stringify(buf),
-                 'tsuhfh/BfCKGrc+TowqHYhrszWmkVqTaN8FRvGXD2f4K2A');
+                 'starel/AvhFDVufJ0YVDsQ12ZrTSK1JtG+Co3jLh7P8FbAI');
   });
 
   it('should parse string', () => {
     const buf = Buffer.from('2f8450d5b9f2746150ec435d99ad348a' +
                             'd49b46f82a378cb87b3fc15b00884d21', 'hex');
     assert.deepEqual(
-        huffin.parse('tsuhfh/BfCKGrc+TowqHYhrszWmkVqTaN8FRvGXD2f4K2A'),
+        huffin.parse('starel/AvhFDVufJ0YVDsQ12ZrTSK1JtG+Co3jLh7P8FbAI'),
         buf);
   });
 
   it('should test binary data', () => {
-    const prefix = huffin.parsePrefix('tsuhfh');
+    const prefix = huffin.parsePrefix('starel');
 
     const buf = Buffer.from('2f8450d5b9f2746150ec435d99ad348a' +
                             'd49b46f82a378cb87b3fc15b00884d21', 'hex');
@@ -35,7 +35,7 @@ describe('Huffin', () => {
 
     assert.equal(
         huffin.stringify(buf),
-        'ttttt/AA');
+        'scpqi/AA');
 
     assert.deepEqual(huffin.parse(huffin.stringify(buf)),
                      buf);
@@ -47,7 +47,7 @@ describe('Huffin', () => {
 
     assert.equal(
         huffin.stringify(buf),
-        'eqcfnefeexouedn/NxjF/tYhfpiaw/VghR7G38P84UgE26U');
+        'ribzhavllisngiu/BuMYv9rEL9MTWH6sEKPY2/h/nCkAm3Sr');
 
     assert.deepEqual(huffin.parse(huffin.stringify(buf)),
                      buf);

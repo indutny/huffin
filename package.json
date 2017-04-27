@@ -3,6 +3,9 @@
   "version": "1.0.1-1",
   "description": "Human-readable representation of [ed22519][0] public keys, through Huffman Codes.",
   "main": "lib/huffin.js",
+  "files": [
+    "lib"
+  ],
   "dependencies": {
     "bn.js": "^4.11.6"
   },
