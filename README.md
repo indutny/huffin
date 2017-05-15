@@ -1,6 +1,6 @@
 # huffin
 
-Human-readable representation of [ed22519][0] public keys, through Huffman
+Human-readable representation of [ed25519][0] public keys, through Huffman
 Codes.
 
 ## Usage
