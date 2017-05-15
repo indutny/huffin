@@ -14,6 +14,13 @@ const key = Buffer.from(
 id.stringify(key);  // 'hyper_FJLQ6naoksSNcEou9FAfiV52mfU5NVV6exVANU9c'
 
 id.parse('hyper_FJLQ6naoksSNcEou9FAfiV52mfU5NVV6exVANU9c');  // `key`
+
+// HEX encoding is also available
+id.stringify(key, 'hex');
+// 'hyper_13af94b28b38cb6f38737a58ebd063c12a8557d7cf440a9dfbc5a320e57'
+
+id.parse('hyper_13af94b28b38cb6f38737a58ebd063c12a8557d7cf440a9dfbc5a320e57');
+// `key`
 ```
 
 ## LICENSE
